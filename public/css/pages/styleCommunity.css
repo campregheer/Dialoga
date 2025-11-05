@@ -427,6 +427,11 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .community-content {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
     .welcome-title {
         font-size: 1.8rem;
     }
@@ -439,41 +444,81 @@
         padding: 20px;
     }
     
+    .section-title {
+        font-size: 1.2rem;
+    }
+
     .form-footer {
         flex-direction: column;
         align-items: stretch;
         text-align: center;
+        gap: 12px;
     }
     
     .post-btn {
         justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .privacy-note {
+        justify-content: center;
     }
     
     .pagination {
-        padding: 15px 20px;
+        padding: 12px 15px;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px;
     }
     
     .pagination-btn {
         padding: 8px 12px;
         font-size: 0.9rem;
+        flex: 1;
+        min-width: 120px;
+        justify-content: center;
     }
     
     .pagination-numbers {
         order: -1;
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .form-comentario {
+        padding: 15px;
+    }
+
+    .comentarios {
+        padding: 12px;
+    }
+
+    .like-btn, .load-comments-btn, .close-comments-btn {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .welcome-card {
-        padding: 30px 20px;
+        padding: 25px 15px;
+        margin-bottom: 15px;
     }
     
     .welcome-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 0.95rem;
     }
     
     .post-form-card {
@@ -481,13 +526,79 @@
     }
     
     .post-card {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .post-form textarea {
+        min-height: 100px;
+        padding: 12px;
+        font-size: 0.95rem;
     }
     
+    .pagination {
+        padding: 10px;
+    }
+
     .pagination-number {
-        width: 35px;
-        height: 35px;
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .pagination-btn {
+        min-width: 100px;
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .empty-state {
+        padding: 40px 15px;
+    }
+
+    .empty-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .empty-state h3 {
+        font-size: 1.2rem;
+    }
+
+    .empty-state p {
         font-size: 0.9rem;
+    }
+
+    .form-comentario input[type="text"] {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .comentarios li {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .welcome-title {
+        font-size: 1.3rem;
+    }
+
+    .pagination-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+
+    .pagination-btn {
+        min-width: 90px;
+        font-size: 0.8rem;
+        padding: 6px 8px;
     }
 }
     
